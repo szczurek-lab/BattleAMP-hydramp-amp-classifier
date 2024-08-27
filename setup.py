@@ -27,7 +27,7 @@ setup(
         'joblib~=0.17.0',
         'argparse',
         'tqdm~=4.51.0',
-        'biopython==1.83',
+        'biopython',
         'gdown>=5.2.0'
     ],
     setup_requires=['wheel']
