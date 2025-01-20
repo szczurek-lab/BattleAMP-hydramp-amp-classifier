@@ -19,11 +19,11 @@ def predict_and_save(model_path, sequence_path, sequence_format, output_csv):
         raise ValueError("Unsupported sequence format. Use 'fasta' or 'csv'.")
 
     data_manager = AMPDataManagerSingleFile(input_csv_path, min_len=MIN_LENGTH, max_len=MAX_LENGTH)
-    x_from_file, skipped = data_manager.get_data()
+    x_encoded, x, skipped = data_manager.get_data()
 
-    preds = model.predict(x_from_file)
+    preds = model.predict(x_encoded)
 
-    pd.DataFrame({'Prediction': preds[:, 0]}).to_csv(output_csv, index=False)
+    pd.DataFrame({'Sequence': x, 'Prediction': preds[:, 0]}).to_csv(output_csv, index=False)
     print(f"Predictions saved to {output_csv}")
 
 

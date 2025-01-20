@@ -34,4 +34,6 @@ class AMPDataManagerSingleFile:
         - num of filtered out sequences"""
         dataset = self._filter_data()
         x = np.asarray(dataset['Sequence'].tolist())
-        return pad(to_one_hot(x)), len(self.data) - len(dataset)
+        return pad(to_one_hot(x)), x, len(self.data) - len(dataset)
+
+
