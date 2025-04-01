@@ -3,14 +3,20 @@
 
 # HydrAMP: a deep generative model for antimicrobial peptide discovery
 
+## Installation
+```
+conda create -n hydramp python=3.8
+conda activate hydramp
+sh setup.sh
+```
+
 ### Usage in benchmark
-1. create environment (python virtual env/ conda / docker) and using it:
-2. `sh setup.sh`
-3. `sh inference.sh {path_to_input.fasta} {path_to_output.tsv}`
+ `sh inference.sh {path_to_input.fasta} {path_to_output.tsv}`
+
 
 [![DOI](https://zenodo.org/badge/452699400.svg)](https://zenodo.org/badge/latestdoi/452699400)
 ### Data
-Data is hosted at google drive: https://drive.google.com/drive/folders/1IwJjwSKpXYWWALKXM8nghqmlSvyu3BYq
+Data is hosted at google drive: https://drive.google.com/drive/folders/1krim1ugqNDmgmHZCFSOvmynWxCSzyOto
 
 You can either:
 - manually download and extract it
