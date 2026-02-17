@@ -4,8 +4,10 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
-# Install HydrAMP package and dependencies (TF 2.2.1, Keras 2.3.1)
-pip install .
+# Install HydrAMP package without resolving dependencies.
+# TF 2.2.1 and Keras 2.3.1 are provided by the conda environment
+# (no longer available on PyPI).
+pip install --no-deps .
 
 # Verify model weights exist
 MODEL_DIR="models/amp_classifier"

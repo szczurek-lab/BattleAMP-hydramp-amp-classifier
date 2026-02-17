@@ -9,4 +9,4 @@ paper: "https://doi.org/10.1038/s42256-023-00619-3"
 source_repo: "https://github.com/szczurek-lab/hydramp"
 length_min: 1
 length_max: 25
-gpu_required: false
+gpu_required: true
