@@ -7,7 +7,7 @@ cd "$SCRIPT_DIR"
 # Install HydrAMP package without resolving dependencies.
 # TF 2.2.1 and Keras 2.3.1 are provided by the conda environment
 # (no longer available on PyPI).
-pip install --no-deps .
+pip install .
 
 # Verify model weights exist
 MODEL_DIR="models/amp_classifier"

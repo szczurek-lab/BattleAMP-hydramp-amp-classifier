@@ -7,5 +7,4 @@ dependencies:
   - numpy
   - pandas
   - biopython
-  - joblib
   - pip
