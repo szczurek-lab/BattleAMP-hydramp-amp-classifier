@@ -19,7 +19,7 @@ setup(
         'numpy~=1.18.5',
         'pandas~=1.1.4',
         'scikit-learn~=0.23.2',
-        'modlamp~=4.2.3',
+        # 'modlamp~=4.2.3',
         'matplotlib~=3.3.2',
         'protobuf~=3.14.0',
         'seaborn~=0.11.0',
